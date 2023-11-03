@@ -10,6 +10,7 @@ RUN pip install -r requirements.txt
 RUN echo "#!/bin/bash\n"\
          "sleep 5s\n"\
          "python create_db.py\n"\
+         "python download_models.py\n"\
          "uvicorn main:app --host 0.0.0.0 --port 8000 --workers 10" >> launch.sh
 
 RUN chmod +x launch.sh
