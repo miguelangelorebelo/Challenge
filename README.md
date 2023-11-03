@@ -24,10 +24,6 @@ password: password (very secure)
 To remove them (and the images):
 `make down`
 
-This downloads the event jsons from the s3 bucket, extracts and transforms the data and loads it into 2 separate tables
-in the loka_db. (A database on a MariaDB running on a separate docker). Unfortunatelly I didn't had time to configure a
-data lake. This is something that I've never done so it would have taken me some extra time to figure out.
-
 The process goes like this:
 
 1. The first time it runs `create_db.py` script that creates the db and table in the MariaDB WH container.
