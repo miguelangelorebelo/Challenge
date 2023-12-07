@@ -1,4 +1,4 @@
-# Continental MLE Challenge
+# ContiGPT
 
 ### Author: Miguel Ângelo Pontes Rebelo
 
